@@ -22,9 +22,13 @@ body {
     margin: 0 0 0 $boxSize;
 }
 .div-for-chess {
+    font-size: 72px;
     width: $boxSize;
     height: $boxSize;
     border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .div-for-numbers {
     border: none;

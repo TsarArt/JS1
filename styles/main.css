@@ -39,9 +39,19 @@ body {
   margin: 0 0 0 100px; }
 
 .div-for-chess {
+  font-size: 72px;
   width: 100px;
   height: 100px;
-  border: 1px solid #fff; }
+  border: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .div-for-numbers {
   border: none;
