@@ -1,0 +1,48 @@
+$boxSize: 100px;
+$boxCount: 8;
+body {
+    display: flex;
+    flex-direction: column;
+}
+.main-part {
+    display: flex;
+    justify-content: start;
+}
+.numbers {
+    display: flex;
+    flex-direction: column;
+}
+.chess {
+    width: $boxSize * $boxCount + $boxCount * 2;
+    display: flex;
+    flex-flow: wrap;
+}
+.letters {
+    display: flex;
+    margin: 0 0 0 $boxSize;
+}
+.div-for-chess {
+    font-size: 72px;
+    width: $boxSize;
+    height: $boxSize;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-for-numbers {
+    border: none;
+    font-size: 36px;
+    width: $boxSize;
+    height: $boxSize;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.div-for-letters {
+    font-size: 36px;
+    width: $boxSize;
+    height: $boxSize;
+    display: flex;
+    justify-content: center;
+}
