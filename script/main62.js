@@ -1,6 +1,7 @@
 // Реализовать модуль корзины. Создать блок товаров и блок корзины. У каждого товара есть кнопка «Купить», при нажатии на которую происходит добавление имени и цены товара в блок корзины. Корзина должна уметь считать общую сумму заказа.
 
 let catalog = document.querySelector('.catalog');
+let cartArr = [];
 
 function renderCatalog() {
     counts_of_product = 5;// prompt('Введите необходимое количество товаров!');
@@ -10,22 +11,9 @@ function renderCatalog() {
     return catalog;
 }
 
-function renderCart() {
-    let cart = document.createElement('div');
-    cart.className = 'cart-list';
-
-
-    let cartIcon = document.querySelector('.cart-button');
-    let addToCartBtn = document.querySelector('.product-btn');
-    let product = renderProduct();
-    let cartArr = [];
-    addToCartBtn.addEventListener('click', (e) => {
-        while (addToCartBtn.onclick) {
-            cartArr.push(product);
-        }
-    });
-    return cartArr;
-}
+// function renderCart() {
+    
+// }
 
 function renderProduct() {
     let divProduct = document.createElement('div');
@@ -50,12 +38,13 @@ function renderProduct() {
     divProduct.appendChild(productPrice);
     divProduct.appendChild(productBuyBtn);
 
-    // productBuyBtn.addEventListener('click', (e) => {
-    //     // С помощью этой кнопки будет добавляться продукт в корзину
-    // });
+    productBuyBtn.addEventListener('click', (e) => {
+        // С помощью этой кнопки будет добавляться продукт в корзину
+        cartArr.push(divProduct);
+    });
 
     return divProduct;
 }
 
 renderCatalog();
-console.log(renderCart());
+console.log(cartArr);

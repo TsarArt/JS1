@@ -13,25 +13,18 @@ function smallImg() {
     return getSmallImg;
 }
 function bigImg() {
-    let big_img = document.querySelector('#big-img');
-    let collectSmallImg = document.querySelectorAll('img');
-    let emptyImg = 'Такой картинки нет!'
-    for (let i = 1; i < collectSmallImg.length; i++) {
-        // let smallImg = `<img id="image-small-${i}" class="img-small" src="img/small/${i}.jpg">`
-        let createImg = `<img id="image-big-${i}" class="img-big" src="img/big/${i}.jpg">`
-        // collectSmallImg[i].addEventListener('click', (e) => {
-        //     big_img.appendChild(createImg);
-        //     return big_img;
-        // });
-        // switch(i) {
-        //     case `<img id="image-small-${i}" class="img-small" src="img/small/${i}.jpg">`:
-        //         big_img.appendChild(createImg);
-        //         return big_img;
-        //     default:
-        //         return emptyImg;
-        // }
+    let smallImg = document.querySelector('.img-small');
+    let collection = document.querySelectorAll('#small-img');
+    let divBigImg = document.querySelector('#big-img');
+    let bigImg = document.createElement('div');
+    bigImg.className = 'img-big';
+    for (let i = 0; i < collection.length; i++) {
+        smallImg.addEventListener('click', (e) => {
+            // bigImg.appendChild
+            // if ()
+        });
     }
-    return big_img;
 }
+
 smallImg();
 bigImg();
