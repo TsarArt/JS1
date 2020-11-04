@@ -1,0 +1,108 @@
+header {
+  background-color: #3f403f; }
+
+.header {
+  width: 1100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.shop-name {
+  font-size: 50px;
+  color: #fff; }
+
+.cart-button {
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: 72px;
+  padding: 0 15px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70px;
+  height: 50px; }
+
+.cart-button:focus {
+  color: #a3a3a3; }
+
+.catalog {
+  width: 1100px;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap; }
+
+.product {
+  width: 200px;
+  margin: 15px 0;
+  height: 300px;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.product-img {
+  border-radius: 10px 10px 0 0; }
+
+.product-btn {
+  margin: 0 0 20px 0; }
+
+#big-img {
+  width: 1100px;
+  height: 500px;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.img-big {
+  width: 1000px;
+  height: 500px; }
+
+#small-img {
+  width: 1100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap; }
+
+.img-small {
+  width: 200px;
+  height: 150px;
+  margin: 0 5px; }
+
+/*# sourceMappingURL=main.css.map */
